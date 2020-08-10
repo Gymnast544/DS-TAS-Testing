@@ -7,7 +7,7 @@ import time
 #to get the text file, use dsmtobytes.py
 
 
-filename = "NSMB first few levels.txt" #this is the name of the file that inputs are sent to
+filename = "NSMBTAS.txt" #this is the name of the file that inputs are sent to
 
 
 def chooseDevice():
