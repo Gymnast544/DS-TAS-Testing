@@ -1,6 +1,6 @@
 endfile = "NSMBTAS.txt"
 
-files = ["openingmenuforshellrng.txt", "SoigNSMB.txt"]
+files = ["openingmenuforshellrng.txt", "SoigNSMB.txt", "HartmannNSMB.txt"]
 
 f = open(endfile, "w")
 

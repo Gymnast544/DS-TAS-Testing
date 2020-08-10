@@ -83,8 +83,8 @@ startline = 1 #inclusive
 endline = 100000 #inclusive
 
 
-f = open("SoigNSMB.dsm", "r")#DSM file to read from
-g = open("SoigNSMB.txt", "w")#Output file
+f = open("hartmann-nsmb-warps.dsm", "r")#DSM file to read from
+g = open("HartmannNSMB.txt", "w")#Output file
 
 
 byte1buttons = ["A", "B", "X", "Y", "L", "R"]
@@ -138,6 +138,9 @@ for i in range(endline-startline+1):
             parseLine(" ")
     elif "BATTERYPOWERON" in line:
         g.write("128\n")
+    elif "END" in line:
+        g.close()
+        break
     elif line != "":
         parseLine(line)
     else:
